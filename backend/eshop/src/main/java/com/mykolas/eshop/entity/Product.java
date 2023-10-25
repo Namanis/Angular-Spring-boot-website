@@ -19,9 +19,11 @@ public class Product {
     @Column(name = "id")
     private Long id;
 
+
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
     private ProductCategory category;
+
 
     @Column(name = "sku")
     private String sku;

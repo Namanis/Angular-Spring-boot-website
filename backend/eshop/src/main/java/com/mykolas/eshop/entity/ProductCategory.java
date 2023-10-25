@@ -1,5 +1,6 @@
 package com.mykolas.eshop.entity;
 
+
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
@@ -23,5 +24,6 @@ public class ProductCategory {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
     private Set<Product> products;
-
 }
+
+
